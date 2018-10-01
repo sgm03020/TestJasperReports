@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="example" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="010601e3-d0c4-4a72-91ad-ba115e2ac720">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\main\resources\examples\DataAdapter.xml"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="CODE" class="java.lang.String"/>
+	<field name="NAME" class="java.lang.String"/>
+	<title>
+		<band height="34" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="27">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="27" uuid="9409e7ea-fbb8-41d6-94c9-30f787fce9b6"/>
+				<text><![CDATA[CODE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="101" height="35" uuid="74e28b0c-9968-4dd9-a51e-72e645bde0f8"/>
+				<textFieldExpression><![CDATA[$F{CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="0" width="101" height="35" uuid="29b75c37-22bb-4996-8288-c2459b9e902e"/>
+				<textElement>
+					<font fontName="ipaexg"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAME} + "　だよ"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
